@@ -33,14 +33,14 @@ inquirer.prompt(QUESTIONS).then(answers => {
     log(chalk.blue('✅ Init git repository'));
     shell.exec('git init -q');
 
-    log(chalk.blue('🐶 Install git hooks'));
-    shell.exec('yarn husky install');
-
     log(chalk.blue('🧲 Add all files to git repository'));
     shell.exec('git add .');
 
     log(chalk.blue('⌛️ Create first commit'));
     shell.exec('git commit -m "chore: initial commit" --quiet');
+
+    log(chalk.blue('🐶 Install git hooks'));
+    shell.exec('yarn husky install');
 
     log(chalk.green('\n\n🙌 Success! ') + chalk.white(`Created ${projectName} at ${tartgetPath}\nInside that directory, you can run several commands: \n`));
     log(chalk.blue('  yarn test'));
