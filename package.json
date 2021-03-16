@@ -1,0 +1,17 @@
+{
+  "name": "cli-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "git-clone": "^0.1.0",
+    "inquirer": "^8.0.0",
+    "shelljs": "^0.8.4"
+  }
+}
