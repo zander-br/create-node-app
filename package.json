@@ -13,6 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
     "git-clone": "^0.1.0",
     "inquirer": "^8.0.0",
     "shelljs": "^0.8.4"
