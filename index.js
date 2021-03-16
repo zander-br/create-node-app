@@ -21,5 +21,9 @@ inquirer.prompt(QUESTIONS).then(answers => {
   clone(templateRepo, tartgetPath, () => {
     shell.cd(tartgetPath);
     shell.exec('yarn');
+    shell.exec('rm -rf .git');
+    shell.exec('git init');
+    shell.exec('git add .');
+    shell.exec('git commit -m "chore: initial commit"');
   });
 });
