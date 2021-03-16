@@ -27,6 +27,9 @@ inquirer.prompt(QUESTIONS).then(answers => {
     log(chalk.blue('📦 Install all dependences using yarn'));
     shell.exec('yarn install --silent');
 
+    log(chalk.blue('🐶 Install git hooks'));
+    shell.exec('yarn husky install');
+
     log(chalk.red('❌ Removing git repository'));
     shell.exec('rm -rf .git');
 
