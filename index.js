@@ -16,7 +16,7 @@ inquirer.prompt(QUESTIONS).then(answers => {
   const currentDir = process.cwd();
   const projectName = answers['name'];
   const tartgetPath = path.join(currentDir, projectName);
-  const templateRepo = 'https://github.com/zander-br/node-clean-architecture-demo';
+  const templateRepo = 'https://github.com/zander-br/node-boilerplate-typescript';
 
   clone(templateRepo, tartgetPath, () => {
     shell.cd(tartgetPath);
